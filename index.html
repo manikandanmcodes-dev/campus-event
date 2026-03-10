@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Campus Event Navigator</title>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<!-- Project CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+body{
+margin:0;
+font-family: "Inter", sans-serif;
+}
+
+#map{
+height:100vh;
+width:100vw;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Back button -->
+<a href="events.html"
+style="position:absolute;z-index:1000;top:20px;left:20px;background:black;color:white;padding:10px 16px;border-radius:6px;text-decoration:none;">
+← Back to Events
+</a>
+
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Map Script -->
+<script src="js/map.js"></script>
+
+</body>
+
+</html>
