@@ -135,49 +135,58 @@ body.searching .search-container{
 }
 
 /* ============================= */
-/* HERO HEADER */
+/* MOBILE RESPONSIVE */
 /* ============================= */
 
+@media (max-width: 768px){
+
+/* hero height smaller for mobile */
 .hero-header{
-    position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    min-height:70vh;
+    height:auto;
+    padding-top:40px;
 }
 
 
-/* ============================= */
-/* TOP LOGOS */
-/* ============================= */
-
-.header-bar{
-    position:absolute;
-    top:20px;
-    left:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    padding:0 60px;
-}
-
+/* logos smaller */
 .header-logo{
-    height:170px;
-    object-fit:contain;
+    height:60px;
 }
 
 
-/* ============================= */
-/* TEXPERIA BANNER */
-/* ============================= */
-
-.banner-logo{
-    display:flex;
-    justify-content:center;
+/* reduce side padding */
+.header-bar{
+    padding:0 20px;
 }
 
+
+/* banner size */
 .banner-logo img{
-    max-width:900px;
-    width:100%;
-    object-fit:contain;
+    max-width:90%;
+}
+
+
+/* venue button */
+.view-venue-btn{
+    width:90%;
+    font-size:16px;
+}
+
+
+/* search box */
+.search-container{
+    width:90%;
+}
+
+
+/* event cards spacing */
+.event-card{
+    padding:20px;
+}
+
+
+/* heading smaller */
+#schedule-title{
+    font-size:26px;
+}
+
 }
