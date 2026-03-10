@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -8,22 +7,18 @@
 
 <title>Campus Events - Tech Fest 2026</title>
 
+<link rel="stylesheet" href="./css/style.css">
+
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 
-<link rel="stylesheet" href="css/style.css">
-
 </head>
-
 
 <body class="antialiased">
 
 <div class="search-overlay" onclick="exitSearchMode()"></div>
 
-
-<header class="max-w-6xl mx-auto px-6 pt-20 pb-12">
-
-<div class="text-center mb-6">
+<header class="max-w-6xl mx-auto px-6 pt-20 pb-8 text-center">
 
 <div class="flex items-center justify-center gap-2 text-[13px] font-semibold text-gray-800 mb-4">
 <i data-lucide="calendar" class="w-4 h-4 text-black"></i>
@@ -34,17 +29,10 @@
 Campus Events
 </h1>
 
-<p class="text-gray-600 text-lg leading-relaxed max-w-lg mx-auto">
-Discover what's happening around the campus today.
-</p>
-
-</div>
-
 </header>
 
 
 <div class="safe-content max-w-6xl mx-auto px-6 pb-32">
-
 
 <div class="mb-20">
 
@@ -65,9 +53,8 @@ onkeyup="filterEvents()">
 
 </div>
 
-
-<h2 class="text-2xl font-bold mb-10 tracking-tight">
-Today's Schedule
+<h2 id="schedule-title" class="text-2xl font-bold mb-10 tracking-tight text-center">
+Loading Schedule...
 </h2>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="event-grid"></div>
@@ -78,21 +65,15 @@ Today's Schedule
 
 <!-- MODAL -->
 
-<div
-id="modal"
+<div id="modal"
 class="fixed inset-0 z-[100] flex items-center justify-center modal-backdrop bg-black/40 p-6 hidden"
-onclick="closeModal()"
->
+onclick="closeModal()">
 
-<div
-class="modal-card bg-white w-full max-w-3xl rounded-lg shadow-2xl overflow-hidden relative border border-gray-200"
-onclick="event.stopPropagation()"
->
+<div class="modal-card bg-white w-full max-w-3xl rounded-lg shadow-2xl overflow-hidden relative border border-gray-200"
+onclick="event.stopPropagation()">
 
-<button
-onclick="closeModal()"
-class="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 text-gray-400 hover:bg-black hover:text-white transition-all"
->
+<button onclick="closeModal()"
+class="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 text-gray-400 hover:bg-black hover:text-white transition-all">
 
 <i data-lucide="x" class="w-4 h-4"></i>
 
@@ -103,10 +84,8 @@ class="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded
 
 <div id="modal-badge-container" class="mb-4"></div>
 
-<h2
-id="modal-title"
-class="text-5xl font-[800] tracking-tighter mb-8 leading-tight"
->
+<h2 id="modal-title"
+class="text-5xl font-[800] tracking-tighter mb-8 leading-tight">
 </h2>
 
 
@@ -120,7 +99,7 @@ class="text-5xl font-[800] tracking-tighter mb-8 leading-tight"
 
 <div>
 <p id="modal-time" class="font-bold text-sm"></p>
-<p class="text-[10px] text-gray-400 font-bold uppercase">Start Time</p>
+<p class="text-[10px] text-gray-400 font-bold uppercase">Time</p>
 </div>
 
 </div>
@@ -140,12 +119,11 @@ class="text-5xl font-[800] tracking-tighter mb-8 leading-tight"
 </div>
 
 
-<div class="bg-gray-50 p-6 rounded-lg">
+<div class="bg-gray-50 p-8 rounded-lg">
 
-<p
-id="modal-long-desc"
-class="text-xs text-gray-600 leading-relaxed"
-></p>
+<p id="modal-long-desc"
+class="text-xs text-gray-600 leading-relaxed">
+</p>
 
 </div>
 
@@ -154,10 +132,8 @@ class="text-xs text-gray-600 leading-relaxed"
 
 <div class="mt-10">
 
-<button
-onclick="goToMap()"
-class="group relative w-full border border-black rounded-lg py-4 font-bold flex items-center justify-center gap-2 overflow-hidden transition-all"
->
+<button id="find-on-map-btn"
+class="group relative w-full border border-black rounded-lg py-4 font-bold flex items-center justify-center gap-2 overflow-hidden transition-all">
 
 <div class="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
 
@@ -178,8 +154,7 @@ Find on Map
 </div>
 
 
-<script src="js/events.js"></script>
+<script src="./js/events.js"></script>
 
 </body>
-
 </html>
