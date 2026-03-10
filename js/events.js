@@ -219,7 +219,7 @@ document.body.style.overflow="auto";
 
 function goToMap(){
   window.location.href =
-  "https://dancing-cucurucho-070428.netlify.app/?loc="
+  "https://voluble-valkyrie-9e7aa6.netlify.app/?loc="
   + encodeURIComponent(currentLocation);
 }
 
