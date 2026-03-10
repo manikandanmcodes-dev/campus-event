@@ -12,15 +12,15 @@ const day2Date = "2026-03-13";
 
 const events = [
 
-{ date: day1Date, title: "AI Workshop", start: "10:00", end: "12:30", loc: "AI Campus", desc: "Hands-on AI workshop.", detail: "Exploring transformers and local LLMs.", link: "main.html?loc=AI Campus" },
+{ date: day1Date, title: "AI Workshop", start: "10:00", end: "12:30", loc: "AI Campus", desc: "Hands-on AI workshop.", detail: "Exploring transformers and local LLMs.", link: "https://voluble-valkyrie-9e7aa6.netlify.app/?loc=AI Campus" },
 
-{ date: day1Date, title: "Drama Performance", start: "11:30", end: "13:00", loc: "DT Playhouse", desc: "Live theatre production.", detail: "Shakespeare modernized.", link: "main.html?loc=DT Playhouse" },
+{ date: day1Date, title: "Drama Performance", start: "11:30", end: "13:00", loc: "DT Playhouse", desc: "Live theatre production.", detail: "Shakespeare modernized.", link: "https://voluble-valkyrie-9e7aa6.netlify.app/?loc=DT Playhouse" },
 
-{ date: day1Date, title: "Robotics Demo", start: "13:00", end: "14:30", loc: "D Block", desc: "Autonomous bot races.", detail: "Featuring computer vision tech.", link: "main.html?loc=D Block" },
+{ date: day1Date, title: "Robotics Demo", start: "13:00", end: "14:30", loc: "D Block", desc: "Autonomous bot races.", detail: "Featuring computer vision tech.", link: "https://voluble-valkyrie-9e7aa6.netlify.app/?loc=D Block" },
 
-{ date: day2Date, title: "Hackathon Start", start: "09:00", end: "11:00", loc: "Main Hall", desc: "24-hour coding sprint.", detail: "Prizes for best innovation.", link: "main.html?loc=Main Hall" },
+{ date: day2Date, title: "Hackathon Start", start: "09:00", end: "11:00", loc: "Main Hall", desc: "24-hour coding sprint.", detail: "Prizes for best innovation.", link: "https://voluble-valkyrie-9e7aa6.netlify.app/?loc=Main Hall" },
 
-{ date: day2Date, title: "UX Design Talk", start: "12:00", end: "14:00", loc: "B Block", desc: "Clean UI principles.", detail: "Minimalism workshop.", link: "main.html?loc=B Block" }
+{ date: day2Date, title: "UX Design Talk", start: "12:00", end: "14:00", loc: "B Block", desc: "Clean UI principles.", detail: "Minimalism workshop.", link: "https://voluble-valkyrie-9e7aa6.netlify.app/?loc=B Block" }
 
 ];
 
